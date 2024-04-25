@@ -14,6 +14,7 @@ object DM: TDM
   end
   object tbContatos: TFDTable
     Active = True
+    AfterInsert = tbContatosAfterInsert
     IndexFieldNames = 'id'
     Connection = Conexao
     TableName = 'agenda.contatos'
